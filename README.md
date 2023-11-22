@@ -7,5 +7,5 @@ This Project is in a work in progress, probably will be abandoned, but I do not 
 
 # Credits
 TheCodingGuy - Helper of making this repo possible
-Terminal - Uhhh someone?
+Terminal - Dev of Project Community, like bruhdude
 bruhdude - basically the whole maker of project community
