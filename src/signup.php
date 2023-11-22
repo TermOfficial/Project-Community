@@ -66,7 +66,7 @@ if(isset($_POST["username"]) AND isset($_POST["password"])){
             $error = "Your Nintendo Network ID is invalid.";
             goto showForm;
         }
-        $ch = curl_init('https://nnidlt.murilo.eu.org/api.php?output=hash_only&env=Production&user_id=' . $_POST["nnid"]);
+        $ch = curl_init('https://nnidlt.murilo.eu.org/api.php?output=hash_only&env=production&user_id=' . $_POST["nnid"]);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $miiHash = curl_exec($ch);
         $responseCode = curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
@@ -78,6 +78,21 @@ if(isset($_POST["username"]) AND isset($_POST["password"])){
         $miiHash = null;
     }
     $hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
+
+    // Prevent multiple accounts with the same username
+    $stmt = $db->prepare("SELECT id FROM users WHERE username = ?");
+    $stmt->bind_param("s", $_POST["username"]);
+    $stmt->execute();
+    if($stmt->error){
+        $error = "Unexpected error during lookup. Please try again?";
+        goto showForm;
+    }
+    $res = $stmt->get_result();
+    if($res->num_rows > 0){
+        $error = "That username already exists. Try a different one!";
+        goto showForm;
+    }
+
     $stmt = $db->prepare("INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $_POST["username"], $hash, $_POST["email"]);
     $stmt->execute();
@@ -107,7 +122,7 @@ if(isset($_POST["username"]) AND isset($_POST["password"])){
     $stmt->bind_param("issssi", $user["id"], $miiHash, $_POST["username"], $_POST["nnid"], $miiHash, $hasmh);
     $stmt->execute();
     if($stmt->error){
-        $error = "Yes, your account was created, but your profile wasnt, please contact an administrator to create your profile.<br>" . $stmt->error;
+        $error = "Yes, your account was created, but your profile wasnt, please contact an administrator to create your profile.";
         goto showForm;
     }
     $token = bin2hex(random_bytes(16));
