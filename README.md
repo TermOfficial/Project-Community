@@ -4,3 +4,8 @@ Basically a fixed repository for Project Community, This is abandoned for now..
 Please don't, unless you want broken shit. The code is broken to shit, like every work in progress Miiverse clone.
 # Disclaimer
 This Project is in a work in progress, probably will be abandoned, but I do not fucking care!
+
+# Credits
+TheCodingGuy - Helper of making this repo possible
+Terminal - Uhhh someone?
+bruhdude - basically the whole maker of project community
