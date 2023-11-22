@@ -62,12 +62,13 @@ if($resjson->{'success'} == true){
 			        <input type="submit" value="Submit" />
 			    </form>
 			    <?php } else { ?>
-				<h2>Terminal (owner)</h2>
-				<p>The owner of the site who came up with the idea but only did 45% of the work because Jack (bruhdude) is amazing.</p>
-				<p><a href="mailto:support@community.isledelfino.net">Click to email (support@community.isledelfino.net)</a></p>
-				<h2>bruhdude (co-owner)</h2>
-				<p>The co-owner of the site who is epic and did most of the development.</p>
-				<p><a href="mailto:exmaple@example.com">Click to email (example@example.com, did not insert email.)</a></p>
+				<h2>gray  (owner)</h2>
+				<p>The owner of this site, domain, and the server itself.</p>
+				<p><a href="mailto:scientistgray@skiff.com">Click to email (scientistgray@skiff.com)</a></p>
+				<h2>TheCodingGuy (helper)</h2>
+				<p>CEO of NetroHost and NetroCorp, my hosting provider, helped fix community.php</p>
+				<p><a href="mailto:example@example.com">Click to email (example@example.com Did not enter email.)</a></p>
+
 				<?php } ?>
 		    </div>
 	    </div>
