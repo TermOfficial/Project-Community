@@ -107,7 +107,7 @@ if(isset($_POST["username"]) AND isset($_POST["password"])){
     $stmt->bind_param("issssi", $user["id"], $miiHash, $_POST["username"], $_POST["nnid"], $miiHash, $hasmh);
     $stmt->execute();
     if($stmt->error){
-        $error = "An error occurred while trying to create your profile.";
+        $error = "Yes, your account was created, but your profile wasnt, please contact an administrator to create your profile.<br>" . $stmt->error;
         goto showForm;
     }
     $token = bin2hex(random_bytes(16));
@@ -134,7 +134,7 @@ showForm:
         <br>
         <center><h1><b>Register</b></h1></center>
         <center><p><small>Welcome to <?=$GLOBALS["name"]?>!</small></p></center>
-        <img src="/assets/img/menu-logo.png" height="50" width="250">
+        <img src="/assets/img/menu-logo.png" height="30" width="236">
 		<br>
 		<div class="row">
 			<input type="text" id="user" class="form-control form-box" name="username" placeholder="Username" required>
