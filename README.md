@@ -19,6 +19,6 @@ Not finished, duh.
 
 Comments are not there, as they were never implemented.
 
-You are required to use MariaDB, as mysqlserver does not play nice with the code.
+MariaDB is optional, but mysqlserver wont play nice with the code if not configured correctly.
 
 You need PHP 8.0, stuff will not play nice with the code either.
