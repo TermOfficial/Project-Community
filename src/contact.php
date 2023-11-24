@@ -62,12 +62,9 @@ if($resjson->{'success'} == true){
 			        <input type="submit" value="Submit" />
 			    </form>
 			    <?php } else { ?>
-				<h2>gray  (owner)</h2>
-				<p>The owner of this site, domain, and the server itself.</p>
-				<p><a href="mailto:scientistgray@skiff.com">Click to email (scientistgray@skiff.com)</a></p>
-				<h2>TheCodingGuy (helper)</h2>
-				<p>CEO of NetroHost and NetroCorp, my hosting provider, helped fix community.php</p>
-				<p><a href="mailto:example@example.com">Click to email (example@example.com Did not enter email.)</a></p>
+				<h2>Name</h2>
+				<p>The owner of this site has not put any contact information.</p>
+				<p><a href="mailto:exmaple@example.com">Click to email (example@example.com)</a></p>
 
 				<?php } ?>
 		    </div>
