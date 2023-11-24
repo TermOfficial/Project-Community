@@ -3,7 +3,7 @@ require_once("htm.php");
 renderHeader("Not Found");
 ?>
 <div class="no-content">
-            <p>boi what the fuck is that</p>
+            <p>The page you were looking for was not found.</p>
         </div>
 </body>
 </html>
