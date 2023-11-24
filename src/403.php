@@ -3,7 +3,7 @@ require_once("htm.php");
 renderHeader("Forbidden");
 ?>
 <div class="no-content">
-            <p>SHUT UP PATRICK, SHUT THE FUCK UP</p>
+             <p>You're not allowed to access this page.</p>
         </div>
 </body>
 </html>
