@@ -65,7 +65,6 @@ if($resjson->{'success'} == true){
 				<h2>Name</h2>
 				<p>The owner of this site has not put any contact information.</p>
 				<p><a href="mailto:exmaple@example.com">Click to email (example@example.com)</a></p>
-
 				<?php } ?>
 		    </div>
 	    </div>

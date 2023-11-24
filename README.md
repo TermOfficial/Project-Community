@@ -1,24 +1,8 @@
 # community.php
 Basically a fixed repository for Project Community, This is abandoned for now.. 
 # Can I use this?
-Don't, this shit is not allowed to be used, use this and I'll make sure you don't use it ever again. Other people have permission to rehost it, but not you.
-# Disclaimer
-This Project is in a work in progress, probably will be abandoned, but I do not fucking care!
+Please do not. I mean you can, but why would you even want to do that.
 
-# Credits
-TheCodingGuy - Helper of making this repo possible
-
-Terminal - Dev of Project Community, like bruhdude
-
-bruhdude - basically the whole maker of project community
-
-
-# Notes
-
-Not finished, duh.
-
-Comments are not there, as they were never implemented.
-
-MariaDB is optional, but mysqlserver wont play nice with the code if not configured correctly.
-
-You need PHP 8.0, stuff will not play nice with the code either.
+# People who helped but were not mentioned on the git history
+TheCodingGuy - Helped toward a fork
+bruhdude - Original developer at Project Community
