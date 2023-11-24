@@ -11,3 +11,14 @@ TheCodingGuy - Helper of making this repo possible
 Terminal - Dev of Project Community, like bruhdude
 
 bruhdude - basically the whole maker of project community
+
+
+# Notes
+
+Not finished, duh.
+
+Comments are not there, as they were never implemented.
+
+You are required to use MariaDB, as mysqlserver does not play nice with the code.
+
+You need PHP 8.0, stuff will not play nice with the code either.
